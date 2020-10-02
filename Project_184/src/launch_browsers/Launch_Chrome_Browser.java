@@ -23,14 +23,10 @@ public class Launch_Chrome_Browser
 		 * 			
 		 */
 		
-		//Locate ChromeDriver and Set Runtime Environment property
-		System.setProperty("webdriver.chrome.driver", "E:\\24th_Sep_10AM_2020\\Project_184\\Drivers\\chromedriver.exe");
 		
-		//Launch chromebrowser
+		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 		ChromeDriver chrome=new ChromeDriver();
-		
-		//Typing url at browser window
-		chrome.get("http://facebook.com");    
+		chrome.get("http://google.com");
 		
 
 	}
