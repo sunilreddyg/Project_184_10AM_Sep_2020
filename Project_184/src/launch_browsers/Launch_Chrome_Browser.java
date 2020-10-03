@@ -26,7 +26,7 @@ public class Launch_Chrome_Browser
 		
 		System.setProperty("webdriver.chrome.driver", "Drivers\\chromedriver.exe");
 		ChromeDriver chrome=new ChromeDriver();
-		chrome.get("http://google.com");
+		chrome.get("http://google.com");   //Get method recieve from RemoteWebDriver
 		
 
 	}
