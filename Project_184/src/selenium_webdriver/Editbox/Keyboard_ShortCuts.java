@@ -5,7 +5,8 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Keyboard_ShortCuts {
+public class Keyboard_ShortCuts 
+{
 
 	public static void main(String[] args) 
 	{
@@ -20,6 +21,13 @@ public class Keyboard_ShortCuts {
 		//Identify Dropdown Month and Press ArrowDown For Twice
 		driver.findElement(By.id("month"))
 		.sendKeys(Keys.ARROW_DOWN,Keys.ARROW_DOWN);
+		
+		
+		
+		/*
+		 * Note:--> Real dropdown to select selenium have different commands
+		 * 			don't follow Keybaord shortcuts..
+		 */
 	}
 
 }
