@@ -5,7 +5,7 @@
 				
 				*  Default inspect option    [All browsers]
 				*  Truepath   [it genarate relative xpath]
-				*  chropath   [It genarate relative,absolute and csspath]
+				*  chropath   [It genarate relative,absolute xpath and csspath]
 
 Default inspect option at browser window:---->
 		
