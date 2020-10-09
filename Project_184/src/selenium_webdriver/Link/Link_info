@@ -41,8 +41,7 @@ HtmlSource:-->
 			<strong> Selenium Tester</strong>
 			<span> In, Hyderabad </span>
 		</a>
-
-
+		
 		Note:--> In above htmlsource link name available in two different 
 			nodes. So that we can't use original linkname to identify
 			link.
