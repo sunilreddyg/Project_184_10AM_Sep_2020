@@ -23,6 +23,13 @@ public class Real_Dropdown_Selection {
 		 */
 		new Select(driver.findElement(By.id("month"))).selectByVisibleText("May");
 		
+		
+		/*
+		 * Selecting dropdown with click option..
+		 * 		=> Copy Option Xpath Instead of Select Tag Element
+		 */
+		driver.findElement(By.xpath("//*[@id=\"year\"]/option[10]")).click();
+		
 
 	}
 
