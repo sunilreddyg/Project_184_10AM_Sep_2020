@@ -190,13 +190,14 @@ getAllSelectedOptions:-->
 
 			Note:--> Before use this command make sure dropdown is multiple
 					 option selection type.
+					 
+					 
+getFirstSelectedOption:-->
 	
-
-
-
-
-
-
-
-© 2020 GitHub, Inc.
-Terms
+			Method return First option selected under multiple selection dropdown
+			
+			Select Dropdown=new Select(driver.findElement(By.id("DropdownId"));		 
+			WebElement FirstOption=Dropdown.FirstSelectedOption();	 
+					 
+					 
+	
