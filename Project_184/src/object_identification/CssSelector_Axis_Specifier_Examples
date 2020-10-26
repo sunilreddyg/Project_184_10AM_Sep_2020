@@ -56,6 +56,7 @@ Syntax:-->
 	parenttagname[property='pvalue'] > childtagname[prop='pvalue']
 
 	By.cssSelector("#reg_login > input[id='email']")
+	By.cssSelector("#reg_login > input[type='text']")
 ----------------------------------------------------------------------	
 Example4:-->
 Recognize object when parent-element having duplicate child-elements
