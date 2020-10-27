@@ -122,7 +122,8 @@ HtmlSource:-->
 	Syntax:-->
 		parentnode  / childnode...
 
-		By.xpath("//div[@id='login_conainer']/input")
+		By.cssSelector("div[id='login_container'] > input")
+		By.xpath("//div[@id='login_container']/input")
 
 =====================================================================
 		
