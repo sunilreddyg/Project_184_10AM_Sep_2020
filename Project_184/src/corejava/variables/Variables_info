@@ -76,7 +76,6 @@ Variable Declaration not-to follow:-->
 	=> Don't include specal characters.
 
 --------------------------------------------------------------------------------------------------------------------------->>>
-
 Types of variables available in Java?...>
 
 	
@@ -168,7 +167,7 @@ Instant Variable:---->
 
 		public Hotmailhomepage
 		{
-			    WebDriver driver;
+			    WebDriver driver=null;
 
 				public void launchApplication()
 				{
@@ -187,6 +186,13 @@ Instant Variable:---->
 				}
 		
 		}
+		
+		
+		Note:--> We must call initiated method first inorder to 
+				 store value into global variable
+		
+		
+		
 ------------------------------------------------------------------------------------------------------>>>
 class variable:--> class variables are similar to instant variables, only diff we declare
 	           class variables with static keyword.
@@ -206,13 +212,13 @@ class variable:--> class variables are similar to instant variables, only diff w
 				public void  Landphones
 				{
 					system.out.println(price);
-					//Variable information can be used 
+					//Variable information can be used in instant method
 				}
 
 				public static void mobile
 				{
 					system.out.println(price);
-					//Variable Inforamtion can be used 
+					//Variable Inforamtion can be used in class method
 				}
 		}
 ===========================================
@@ -239,9 +245,19 @@ class variable:--> class variables are similar to instant variables, only diff w
 					page_title=driver.getTitle();
 				}
 				
-				public void Close_browser()
+				public static void Close_browser()
 				{
 					driver.close();
+				}
+				
+				
+				public static void main(String args[])
+				{
+						launchApplication();
+						signin();
+						Close_browser();
+						System.out.println(page_title);
+						
 				}
 		
 		}

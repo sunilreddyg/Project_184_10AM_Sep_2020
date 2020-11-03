@@ -94,7 +94,8 @@ public class DataTypes {
 		
 		System.out.println(name+"   "+email+"   "+mobile);
 		
-
+		
+		System.out.println("number of characters available is --> "+name.length());
 	}
 
 }
