@@ -1,0 +1,29 @@
+Verification commands:-->
+
+			=> In webdriver all verification commands starts with  "GET" keyword, These
+			   verification commands capture application original behaviour at runtime
+			   and allow to validate with expected behaviour...
+			   
+			   
+			   page verificaton commands:-->
+			   		
+			   			getTitle
+			   			getCurrentUrl
+			   			getPageSource
+			   			getwindowHandle
+			   			getwindowHandles
+			   			
+			   Element Verification commands:-->
+			   
+			   			getText
+			   			getAttribute
+			   			getCssvalue
+			   			getLocation
+			   			getSize
+			   			getRect
+			   			
+			   Dropdown verification commands:--->
+			  			
+			  			getFirstSelectedValue
+			  			getAllSelectedValue
+			  			getOptions

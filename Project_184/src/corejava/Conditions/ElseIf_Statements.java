@@ -11,7 +11,7 @@ public class ElseIf_Statements {
 		 * 		Multiple Decisions to Execute
 		 */
 		
-		String browser="safari";
+		String browser="chrome";
 		
 		if(browser.equals("ie"))
 		{

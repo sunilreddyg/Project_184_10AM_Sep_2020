@@ -14,29 +14,35 @@ public class SwitchCase_Statement {
 		 */		
 		
 		
-		int num=2;
+		
+		int num=4;
 		
 		switch (num) 
 		{
 		case 1:
-			System.out.println("Number 1 executed");
+			System.out.println("number 1 executed");
 			break;
 			
 		case 2:
-			System.out.println("Number 2 executed");
+			System.out.println("number 2 executed");
 			break;
 			
 		case 3:
-			System.out.println("Number 3 executed");
+			System.out.println("number 3 executed");
 			break;
 			
 		case 4:
-			System.out.println("Number 4 executed");
+			System.out.println("number 4 executed");
 			break;
 
-		default:System.out.println("Number mismatch");
+		default:System.out.println("num mismatch");
 			break;
 		}
+		
+		
+		
+		
+		
 		
 		
 		
