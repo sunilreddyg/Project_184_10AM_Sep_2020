@@ -27,3 +27,162 @@ Verification commands:-->
 			  			getFirstSelectedValue
 			  			getAllSelectedValue
 			  			getOptions
+================================================================================
+getTitle:--->
+			method capture current window title at runtime.
+			In webpapplication every page contain indepedent title.
+			By capture runtime title we can verify expected page
+			displayed at browser window.
+		
+			Syntax:-->
+					String Runtime_title=driver.getTitle();
+					System.out.println(Runtime_title);				
+====================================================================		
+getCurrenturl:-->
+				method capture current window Url at runtime.
+				In web application every page contains uniqe URL.
+				By capture runtime url we can verify expected page
+				displayed at browser window.
+			
+			Syntax:-->
+					String Runtime_url=driver.getCurrentUrl();
+					System.out.println(Runtime_url);				
+==============================================================
+getPageSource:--->	
+			Method capture Entire pageSource into String format
+			during runtime.  [Backend HTML source]
+			
+			With in soruce we can verify
+			
+					Element ID's  &  HMTL Nodes 
+					Title of a page
+					url of a page
+					page Text
+		
+			String pageSource=driver.getpageSource();
+			System.out.println(pageSoruce);	 
+=============================================================
+getText:-->
+		
+		Method capture visible text using location.from the
+		backend it capture innertext from the selected node.
+		
+		=> It capure selected node and child node text as well.
+		
+	Syntax:--->
+				  WebElement Element=driver.findElement(By.id("x"));
+				  String Element_text=Element.getText();
+				  System.out.println(Element_text);
+				  
+			Note1:--> if selected element not contains any text, method
+				      return empty status.
+				   
+			Note2:--> Method capture selected element and it's child
+					  innertext.	
+					  
+			Note3:--> Method capture only visible text on webpage,In case element  
+							is hidden gettext method return empty status.
+					
+				Que:-->What we can verify with gettext?..  
+						
+						* We can verify Status messages visible at webpage
+						* We can verify error messages visible at webpage
+						* We can verify expected text visible at webpage			
+						
+						
+						
+						
+	Scenario1:-->
+
+		=> GetText method return empty when text not visible at front page.
+		<input id="email"  class="login"> </input>
+
+		String Rtext=driver.findElement(By.id("email")).getText();
+		System.out.Println(Rtext); ------------------------------------> Empty 
+
+
+	Scenario2:-->
+		
+		<div id="reg"  class="Status" > Transaction Completed </div>
+
+
+		String Text=driver.findElement(By.id("reg")).getText();
+		System.out.Println(Text); ----------------------------------------> Transaction Completed
+
+	Scenario3:-->
+
+		<select id="Country" class="reg">
+			<option > Jan </option>
+			<option > Feb </option>
+		</select>
+
+		
+		=> To capture all dropdown options
+		WebElement Dropdown=driver.findElement(By.id("country"));
+		String Options=Dropdown.getText();
+		System.out.Println(Text);   ------------>[Jan Feb]
+
+
+		=> Only single option to retrieve
+		String OptionName=driver.findElement(By.xpath("//select[@id='Country']/option[1]")).getText();
+		System.out.println(OptionName);  ------------------>[Jan]
+========================================================================================
+
+getAttribute("propertyname");
+	
+	Method capture runtime attribute value using attributename.
+				  
+				  
+		Syntax:-->  
+		  	WebElement Element=driver.findElement(By.id("x"));
+		  	String value=Element.getAttribute("attributename");
+		  	System.out.println(value);	
+		  	
+				  	
+  	Note:--> Developer use attributes, to chanage runtime
+  			behaviour of element. by capture element attributes
+  			at runtime we can prove element behaviour available
+			w.r.t client requirement.
+			
+			
+Example:-->
+				
+	<input id="email"  type="textbox" readonly="readonly"  disabled="disabled"></input>
+
+
+	WebElemnet object=driver.findElement(By.id("email"));
+
+	=> Verify Selected Element is Textbox
+
+	Strng Rtype=object.getAttribute("type");
+	if(Rtype.equals("textbox"))
+	{
+		object.clear();
+		object.Sendkeys("Hey i am typing...");
+	}
+	
+	=> Verify Edibtox is readable or writable
+
+	Strng Stype=object.getAttribute("readonly");
+	if(Stype.equals("true"))
+	{
+		System.out.pritnln("Editbox available in readonly format");
+	}
+	else
+	{
+		System.out.println("Editbox available in writable format");
+	}
+			
+		  				
+Example:-->
+			   Captrue editbox input value.
+			   
+			   	Syntax:-->  
+			   	//Identify Editbox
+				WebElement Editbox=driver.findElement(By.id("x"));	
+					
+				//Get Input from Edtibox
+				String InputData=Editbox.getAttribute("value");
+				System.out.println(InputData);	
+						
+
