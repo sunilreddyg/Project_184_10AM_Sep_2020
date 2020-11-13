@@ -9,8 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Window_Switch
 {
-	static WebDriver driver;
-	static String Mainwindow_ID;
+	static WebDriver driver=null;
+	String Mainwindow_ID;
 	
 	public Window_Switch(WebDriver driver) 
 	{
@@ -22,7 +22,7 @@ public class Window_Switch
 	 * Reusable:--> You can call this method whenever you want to switch to Next window
 	 * 				other than mainwindow..
 	 */
-	public static void SwitchTo_Next_Window()
+	public  void SwitchTo_Next_Window()
 	{
 		 Mainwindow_ID=driver.getWindowHandle();
 		 System.out.println("Facebook Homepage window id is --> "+Mainwindow_ID);
@@ -48,7 +48,7 @@ public class Window_Switch
 	 * 				from child window
 	 */
 	
-	public static void switch_back_to_mainwindow()
+	public  void switch_back_to_mainwindow()
 	{
 		driver.switchTo().window(Mainwindow_ID);
 	}
@@ -59,7 +59,7 @@ public class Window_Switch
 	 * Reusable:--> You can call this method whenever you want to switch to using
 	 * 				page title
 	 */
-	public static void SwitchTo_Window_WIth_Title(String Page_title)
+	public  void SwitchTo_Window_WIth_Title(String Page_title)
 	{
 		
 		 Mainwindow_ID=driver.getWindowHandle();
@@ -99,15 +99,17 @@ public class Window_Switch
 	    WebElement Next_window_link=driver.findElement(By.xpath("(//button[@class='btn btn-info'])[1]"));
 	    Next_window_link.click();
 	    
+	    //Creating object for class inorder to access methods and variables of it
+	    Window_Switch obj=new Window_Switch(driver);
 	    
-	    SwitchTo_Next_Window();
+	    obj.SwitchTo_Next_Window();
 	    System.out.println("sub window page title is --> "+driver.getTitle());
 
 	    //Type Into Editbox at New Window
 	    driver.findElement(By.xpath("//input[@id='gsc-i-id1']")).sendKeys("webdriver");
 	    
 	    
-	    switch_back_to_mainwindow();
+	    obj.switch_back_to_mainwindow();
 	    System.out.println("main window page title is --> "+driver.getTitle());
 	}
 

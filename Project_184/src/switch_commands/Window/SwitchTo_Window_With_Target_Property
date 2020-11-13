@@ -1,0 +1,25 @@
+
+Hyper link:-->
+		[Hyper link open page at different window / TAB]
+		
+		
+		HtmlSource:-->
+		
+				<a href="http://Instagram.com"  target="_new"> Instagram </a>
+				
+				
+				
+			=> Click Hyper link using webdriver
+			
+			WebElement Instagram_link=driver.findElement(By.Linktext("Instagram"));
+			Instagram_link.click();
+			
+			=> Use hyper link target property to switch to next window..
+			
+			driver.switchTo().Window("_new");
+		
+		
+		=>Note:--> Developer most time define hyper link target property as "blank"
+					so in this case blank property doen't help to switch window.
+					
+					<a href="http://Messenger.com"  target="_blank"> Messenger </a>
