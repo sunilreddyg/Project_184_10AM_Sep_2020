@@ -152,8 +152,16 @@ visibilityOfElementLocated:-->
 		An expectation to verify expected element visible at webpage	
 			
 Example:--> Manage Explicit wait until element visible at webpage.
+
 	WebdriverWait  wait=new WebDriverwait(driver,100);
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("x")));
+	
+	=> Visibility of element return webelement
+	WebElement Element=wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("x")));
+	Element.click();
+	
+
+	//This timeout command suits for page object model [POM]
 	wait.until(ExpectedConditions.visibilityOf(WebElemnet Element));
 =================================================================================
 
@@ -163,7 +171,10 @@ InvisiblityofElementLocated:-->
 Example:--> Manage explicitwait until expected element hide from webpage
 
 		WebdriverWait  wait=new WebDriverwait(driver,100);
-		wait.until(ExpectedConditions.InvisibilityOfElementLocated(By.id("x")));	
+		wait.until(ExpectedConditions.InvisibilityOfElementLocated(By.id("x")));
+		
+		//This timeout command suits for page object model [POM]
+		wait.until(ExpectedConditions.InvisibilityOf(WebElement element));	
 ================================================================================
 PresenceofElementLocated:-->
 		An expecation to verify expected element source available at backend
@@ -176,7 +187,8 @@ Example:--> Manage explicitwait until expected object found at DOM.
 ===============================================================================
 ElementTobeClickable:-->
 		An Expecation to verify element is clickable.[Buttons,Links --etc]
-		->use only on exception [Element not clickable at position]
+		
+		
 Example:-->
 		manage explicit wait until element receive enable state to perform actions.
 		
@@ -184,6 +196,15 @@ Example:-->
 		wait.until(ExpectedConditions.ElementTobeClickable(By.id("x")));
 ===============================================================================		
 	
+ElementSelectionStateTobe:-->
+	An Expecation to verity selected element Selection status is true/false.
+	[Helps to verify selection state for radio button and chekcboxes..]
+				
+	WebdriverWait  wait=new WebDriverwait(driver,100);
+	wait.until(ExpectedConditions.ElementSelectionStateTobe(by.id("x"), boolean true/false));
+
+================================================================================
+					
 textToBePresentInElementLocated:--->
 	An expectation to verify text presented at selected Element..
 	
@@ -193,11 +214,11 @@ Example:--> manage explicitwait until expected text located at element
 	WebdriverWait  wait=new WebDriverwait(driver,100);
 	wait.until(ExpectedConditions.textToBePresentInElementLocated
 						(By.id("x"),"Expected Text"));
-================================================================================													
+						
+						
+================================================================================	
 textToBePresentInElementValue:--->
 	An expecation to verify expected input presented at editbox...
-
-
 Example:--> manage explicitwait until expected input presented at editbox.
 
 	WebdriverWait  wait=new WebDriverwait(driver,100);
@@ -226,9 +247,3 @@ NumberofWindowsTobe:-->
 	wait.until(ExpectedConditions.NumberofWindowsTobe(int num));
 							
 ======================================================================
-ElementSelectionStateTobe:-->
-	An Expecation to verity selected element Selection status is true/false.
-	[Helps to verify selection state for radio button and chekcboxes..]
-				
-	WebdriverWait  wait=new WebDriverwait(driver,100);
-	wait.until(ExpectedConditions.ElementSelectionStateTobe(by.id("x"), boolean true/false));
