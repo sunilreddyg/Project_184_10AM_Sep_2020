@@ -59,7 +59,7 @@ public class For_Example {
 		{
 			if(i==4)
 			{
-				break;
+				break;   //It stop iteration and eject from loop.
 			}
 			System.out.println(i);
 		}
@@ -70,7 +70,7 @@ public class For_Example {
 		{
 			if(i==4 || i==8)
 			{
-				continue;
+				continue;  
 			}
 			System.out.println(i);
 		}
