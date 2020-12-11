@@ -1,0 +1,38 @@
+
+DataDriven:-->
+		
+	A Data Driven Framework is a technique of separating the “data set” from the actual “test case” (code). 
+	Since the test case is separated from the data set, one can easily modify the test case 
+	of a particular functionality without making changes to the code.
+	
+	
+	=> We can read data from different spread sheets like [.XlS, .XlSX, .Csv , .properties, .txt]
+	=> Datadriven allow multiple set of data to supply for testcase.
+	
+
+Apache POI:--->
+	
+		An opensource library to read,write,design data at
+		Microsoft documents..
+
+Download Apache POI:-->
+
+	  URL:--->  https://archive.apache.org/dist/poi/release/bin/
+	  			Download  previous version --> 3.17
+	  			Download zip format file
+	  			unzip file to project libraries
+	  			configure all executable jar files to java-selenium-project.
+	  			
+	  			HSSF-Workbook    [97-2003] -----> .xls
+	  			
+	  			XSSF-Workbook    [2007 above]  ----> .xlsx
+	  			
+=====================================================================================>
+Step1:--> Create TestData folder
+Step2:--> Create Inputdata workbook.
+Step3:--> Create your own sheet
+Step4:--> Open Workbook and prepare testdata at rows and cells
+=====================================================================================>
+	  			
+	  			
+	  			
