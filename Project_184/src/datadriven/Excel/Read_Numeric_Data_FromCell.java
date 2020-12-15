@@ -7,7 +7,8 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.util.NumberToTextConverter;
 
-public class Read_Numeric_Data_FromCell {
+public class Read_Numeric_Data_FromCell 
+{
 
 	public static void main(String[] args) throws IOException {
 		
@@ -28,7 +29,7 @@ public class Read_Numeric_Data_FromCell {
 		double Number_in_Double_frmt=row.getCell(2).getNumericCellValue();
 		System.out.println("Numer in double format is =--> "+Number_in_Double_frmt);
 		
-		//Convert primitive datatype double value to Object
+		//Convert primitive datatype double value to Object [Auto boxing]
 		Double Object_format=new Double(Number_in_Double_frmt);
 		
 		//Double object format Convert INto Integer value
