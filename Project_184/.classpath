@@ -20,5 +20,7 @@
 	<classpathentry kind="lib" path="E:/24th_Sep_10AM_2020/Selenium_libraries/poi-3.17/lib/commons-codec-1.10.jar"/>
 	<classpathentry kind="lib" path="E:/24th_Sep_10AM_2020/Selenium_libraries/poi-3.17/lib/commons-collections4-4.1.jar"/>
 	<classpathentry kind="lib" path="E:/24th_Sep_10AM_2020/Selenium_libraries/poi-3.17/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SUNIL/Downloads/sqljdbc_8.4.1.0_enu/sqljdbc_8.4/enu/mssql-jdbc-8.4.1.jre8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/SUNIL/Downloads/opencsv-3.3 (2).jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
