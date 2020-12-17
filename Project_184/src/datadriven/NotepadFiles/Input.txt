@@ -1,4 +1,3 @@
-username,mobilenumber,email
 sunil,9030248855,sunilreddy@gmail.com
 kavya,7978797979,kavya@gmail.com
 swapna,8686768768,swapna@gmail.com
