@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser launch successfull]]>
+    </line>
+    <line>
+      <![CDATA[Load application successfull]]>
+    </line>
+    <line>
+      <![CDATA[Account login successfull]]>
+    </line>
+    <line>
+      <![CDATA[Email sent successfull]]>
+    </line>
+    <line>
+      <![CDATA[Sent mail found]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="118" started-at="2020-12-26T07:20:58Z" finished-at="2020-12-26T07:20:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="118" started-at="2020-12-26T07:20:58Z" finished-at="2020-12-26T07:20:59Z">
+      <class name="testng_Framework.Testng_Method_Dependencies">
+        <test-method status="PASS" signature="SetUp_browser()[pri:0, instance:testng_Framework.Testng_Method_Dependencies@20e2cbe0]" name="SetUp_browser" is-config="true" duration-ms="13" started-at="2020-12-26T12:50:58Z" finished-at="2020-12-26T12:50:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp_browser -->
+        <test-method status="PASS" signature="Browser_launch()[pri:0, instance:testng_Framework.Testng_Method_Dependencies@20e2cbe0]" name="Browser_launch" duration-ms="14" started-at="2020-12-26T12:50:59Z" finished-at="2020-12-26T12:50:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser launch successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Browser_launch -->
+        <test-method status="PASS" signature="App_Load()[pri:1, instance:testng_Framework.Testng_Method_Dependencies@20e2cbe0]" name="App_Load" duration-ms="7" started-at="2020-12-26T12:50:59Z" depends-on-methods="testng_Framework.Testng_Method_Dependencies.Browser_launch" finished-at="2020-12-26T12:50:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Load application successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- App_Load -->
+        <test-method status="PASS" signature="User_login()[pri:2, instance:testng_Framework.Testng_Method_Dependencies@20e2cbe0]" name="User_login" duration-ms="1" started-at="2020-12-26T12:50:59Z" depends-on-methods="testng_Framework.Testng_Method_Dependencies.App_Load" finished-at="2020-12-26T12:50:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Account login successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_login -->
+        <test-method status="PASS" signature="ComposeEmail()[pri:3, instance:testng_Framework.Testng_Method_Dependencies@20e2cbe0]" name="ComposeEmail" duration-ms="3" started-at="2020-12-26T12:50:59Z" depends-on-methods="testng_Framework.Testng_Method_Dependencies.User_login" finished-at="2020-12-26T12:50:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Email sent successfull]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ComposeEmail -->
+        <test-method status="PASS" signature="Verify_Email_At_Sentemails_After_Compose_Email()[pri:6, instance:testng_Framework.Testng_Method_Dependencies@20e2cbe0]" name="Verify_Email_At_Sentemails_After_Compose_Email" duration-ms="5" started-at="2020-12-26T12:50:59Z" depends-on-methods="testng_Framework.Testng_Method_Dependencies.ComposeEmail" finished-at="2020-12-26T12:50:59Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Sent mail found]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Verify_Email_At_Sentemails_After_Compose_Email -->
+        <test-method status="PASS" signature="Close_browser()[pri:0, instance:testng_Framework.Testng_Method_Dependencies@20e2cbe0]" name="Close_browser" is-config="true" duration-ms="0" started-at="2020-12-26T12:50:59Z" finished-at="2020-12-26T12:50:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_browser -->
+      </class> <!-- testng_Framework.Testng_Method_Dependencies -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

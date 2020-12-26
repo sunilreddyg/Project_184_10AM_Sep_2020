@@ -1,5 +1,6 @@
 package junit_Framework;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class My_Junit_Test 
@@ -15,6 +16,13 @@ public class My_Junit_Test
 	public void testB() 
 	{
 		System.out.println("TestB executed");
+	}
+	
+	
+	@Ignore
+	public void TestC()
+	{
+		System.out.println("Method will be ignored");
 	}
 
 }

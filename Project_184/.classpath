@@ -23,5 +23,6 @@
 	<classpathentry kind="lib" path="C:/Users/SUNIL/Downloads/sqljdbc_8.4.1.0_enu/sqljdbc_8.4/enu/mssql-jdbc-8.4.1.jre8.jar"/>
 	<classpathentry kind="lib" path="C:/Users/SUNIL/Downloads/opencsv-3.3 (2).jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
