@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="ProjectA">
+		<test name="TestA" verbose="2">
+				<classes>
+						<class name="testng_Framework.TestSuite.ModuleA"></class>
+						<class name="testng_Framework.TestSuite.ModuleC"></class>
+				</classes>
+		</test>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="ProjectA">
+		<test name="TestA" verbose="2">
+				<classes>
+						<class name="testng_Framework.TestSuite.ModuleA">
+								<methods>
+									<include name="tc002"></include>
+								</methods>
+						</class>
+						<class name="testng_Framework.TestSuite.ModuleC">
+								<methods>
+										<exclude name="tc007"></exclude>
+								</methods>
+						</class>
+				</classes>
+		</test>
+</suite>

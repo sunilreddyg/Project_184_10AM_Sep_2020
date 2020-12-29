@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="ProjectB">
+
+		<parameter name="url"  value="http://outlook.com"></parameter>
+		<parameter name="uid"  value="Ajay"></parameter>
+		<parameter name="pwd"  value="Aj1@123"></parameter>
+		<parameter name="exp_result"  value="Inbox"></parameter>
+
+		<test name="TestA" verbose="2">
+				<classes>
+						<class name="testng_Framework.Suite_Parameter.ModuleA"></class>
+				</classes>
+		</test>
+	
+</suite>

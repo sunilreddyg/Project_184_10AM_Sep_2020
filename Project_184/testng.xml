@@ -1,0 +1,9 @@
+<suite  name="Default suite">
+  	<test verbose="2" name="Default test">
+    		<classes>
+      			<class name="testng_Framework.TestSuite.ModuleA"/>
+				<class name="testng_Framework.TestSuite.ModuleB"/>
+				<class name="testng_Framework.TestSuite.ModuleC"/>
+    		</classes>
+  	</test> 
+</suite> 
